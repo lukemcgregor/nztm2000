@@ -336,7 +336,7 @@ var nztm2000 = (function () {
   var nztm_projection;
 
   function get_nztm_projection() {
-    if (nztm_projection == null) {
+    if (!nztm_projection) {
       nztm_projection = define_tmprojection(NZTM_A, NZTM_RF,
         NZTM_CM / rad2deg, NZTM_SF, NZTM_OLAT / rad2deg, NZTM_FE, NZTM_FN,
         1.0);
